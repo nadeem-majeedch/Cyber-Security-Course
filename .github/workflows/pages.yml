@@ -1,0 +1,67 @@
+name: Deploy course website to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'website/**'
+      - '.github/workflows/pages.yml'
+      - 'lectures/**'
+      - 'calendar/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Guard — fail if instructor-only content reached the publish tree
+        run: |
+          if find website -type f \( -ipath '*instructor*' -o -iname '*answer*' -o -iname '*key*' -o -iname '*solution*' \) | grep .; then
+            echo "::error::Instructor-only material detected in website/"; exit 1
+          fi
+          echo "publish tree clean"
+
+      - name: Copy student calendar (generated, dated) into the publish tree
+        run: |
+          if [ -f calendar/generated/student-calendar.md ]; then
+            cp calendar/generated/student-calendar.md website/calendar-dated.md
+          else
+            echo "::warning::calendar/generated/student-calendar.md missing — run the calendar generator first; dated page omitted"
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./website
+          destination: ./_site
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

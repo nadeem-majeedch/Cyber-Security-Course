@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>
+<title>Cyber Security — Semester Calendar</title>
+<style>
+    body{font-family:'Segoe UI',Arial,sans-serif;margin:24px auto;max-width:860px;color:#111;background:#fff}
+    h1{color:#0b3d66} h2{color:#0b3d66;border-bottom:2px solid #0b3d66;padding-bottom:4px;margin-top:28px}
+    .card{border:1px solid #c9d3dc;border-radius:8px;padding:12px 16px;margin:10px 0;page-break-inside:avoid}
+    .date{display:inline-block;background:#0b3d66;color:#fff;border-radius:4px;padding:2px 8px;font-size:.85em}
+    .mod{color:#555;font-size:.9em} ul{margin:6px 0}
+    .assess{background:#fff6e5;border-left:5px solid #b26a00;padding:4px 10px;border-radius:4px;display:inline-block}
+    .graded{background:#e8f2ff;border-left:5px solid #0b3d66;padding:4px 10px;border-radius:4px;display:inline-block}
+    a{color:#0b3d66} .legend{font-size:.9em;color:#444}
+    @media print{body{margin:0;font-size:11pt} .card{break-inside:avoid} h2{break-after:avoid} a{color:#111;text-decoration:none}
+      .noprint{display:none}}
+    </style></head><body>
+<h1>Cyber Security — Semester Calendar</h1>
+<p><strong>BS CS / BS Data Science · 7th semester · 16 weeks · 32 lectures × 2 h (64 contact hours)</strong><br>
+Semester start: <strong>2026-09-07</strong> · sessions Mondays &amp; Thursdays <span class='noprint'>· regenerate: <code>python calendar/tools/generate_calendar.py --start YYYY-MM-DD</code></span></p>
+<p class='legend'>🔬 lab · 📝 assessment · 💬 case discussion · <span class='graded'>blue chip = graded</span></p>
+<h2>Week 1 <small>(07 Sep – 10 Sep 2026)</small></h2>
+<p>📝 Quiz Q1 (specimen) · <a href='../../assessments/student/quizzes/quiz-01.md'>paper</a></p>
+<div class='card'>
+<p><span class='date'>Mon 07 Sep</span> <strong>Lecture 01 — Security Foundations: CIA, Ethics, and the Defender's Mindset</strong><br><span class='mod'>M1 Security Foundations &amp; Threat Modeling · CLO-1</span></p>
+<ul><li>Define CIA and classify real failures</li><li>Apply responsible-disclosure rules</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-00-hardening-baseline/README.md'>Lab 00 — Security Baseline &amp; System Hardening</a> <span class='graded'>graded</span> · <em>Lab 00 due W2</em></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-1-beginner.md'>CS-001</a></p>
+<p class='noprint'><a href='../../lectures/module-01-fundamentals/lecture-01.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 10 Sep</span> <strong>Lecture 02 — Threat Modeling I: STRIDE and Attack Trees</strong><br><span class='mod'>M1 Security Foundations &amp; Threat Modeling · CLO-1</span></p>
+<ul><li>Build a STRIDE model (≥ 12 entries)</li><li>Decompose threats with attack trees</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-01-threat-modeling/README.md'>Lab 01 — Threat Modeling: STRIDE &amp; Attack Trees</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-1-beginner.md'>CS-005</a></p>
+<p class='noprint'><a href='../../lectures/module-01-fundamentals/lecture-02.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 2 <small>(14 Sep – 17 Sep 2026)</small></h2>
+<p><span class='assess'>📝 <strong>Checkpoint A (graded, /10)</strong> · <a href='../../assessments/student/quizzes/quiz-02.md'>details</a></span> <span class='assess'>📝 <strong>Lab 00 report due</strong></span></p>
+<div class='card'>
+<p><span class='date'>Mon 14 Sep</span> <strong>Lecture 03 — Threat Modeling II: Attack Surface and MITRE ATT&amp;CK</strong><br><span class='mod'>M1 Security Foundations &amp; Threat Modeling · CLO-1</span></p>
+<ul><li>Enumerate and shrink an attack surface</li><li>Map behaviors to ATT&amp;CK techniques</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-02-attack-surface/README.md'>Lab 02 — Attack Surface &amp; ATT&amp;CK Mapping</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-1-beginner.md'>CS-020</a></p>
+<p class='noprint'><a href='../../lectures/module-01-fundamentals/lecture-03.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 17 Sep</span> <strong>Lecture 04 — Defense in Depth, Least Privilege, and Checkpoint A</strong><br><span class='mod'>M1 Security Foundations &amp; Threat Modeling · CLO-1</span></p>
+<ul><li>Layer preventive/detective/corrective controls</li><li>Apply least privilege and secure defaults</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-03-controls-layering/README.md'>Lab 03 — Defense-in-Depth Control Plan</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-1-beginner.md'>CS-006</a></p>
+<p class='noprint'><a href='../../lectures/module-01-fundamentals/lecture-04.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 3 <small>(21 Sep – 24 Sep 2026)</small></h2>
+<p>📝 Quiz Q3 (specimen) · <a href='../../assessments/student/quizzes/quiz-03.md'>paper</a></p>
+<div class='card'>
+<p><span class='date'>Mon 21 Sep</span> <strong>Lecture 05 — Web Foundations: HTTP, Sessions, and Authentication</strong><br><span class='mod'>M2 Web Application Security · CLO-2</span></p>
+<ul><li>Read HTTP requests/responses end to end</li><li>Explain session cookies and their attributes</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-04-web-foundations/README.md'>Lab 04 — Web Auth Flow Review</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-2-intermediate.md'>CS-034</a></p>
+<p class='noprint'><a href='../../lectures/module-02-web/lecture-05.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 24 Sep</span> <strong>Lecture 06 — Injection Attacks: SQL, NoSQL, and Command Injection</strong><br><span class='mod'>M2 Web Application Security · CLO-2</span></p>
+<ul><li>Demonstrate and remediate injection</li><li>Apply parameterization and least-privilege DB</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-05-injection/README.md'>Lab 05 — Injection: Confirm, Fix, Verify</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-2-intermediate.md'>CS-033</a></p>
+<p class='noprint'><a href='../../lectures/module-02-web/lecture-06.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 4 <small>(28 Sep – 01 Oct 2026)</small></h2>
+<p><span class='assess'>📝 <strong>Checkpoint B (graded, /10)</strong> · <a href='../../assessments/student/quizzes/quiz-04.md'>details</a></span></p>
+<div class='card'>
+<p><span class='date'>Mon 28 Sep</span> <strong>Lecture 07 — XSS, CSRF, SSRF, and IDOR</strong><br><span class='mod'>M2 Web Application Security · CLO-2</span></p>
+<ul><li>Distinguish the four flaw classes by mechanism</li><li>Apply encoding, tokens, egress, object authz</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-06-xss-csrf-ssrf-idor/README.md'>Lab 06 — Web Flaw Stations</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-2-intermediate.md'>CS-050</a></p>
+<p class='noprint'><a href='../../lectures/module-02-web/lecture-07.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 01 Oct</span> <strong>Lecture 08 — Secure SDLC, Dependency Hygiene, Security Headers + Checkpoint B</strong><br><span class='mod'>M2 Web Application Security · CLO-2</span></p>
+<ul><li>Place SAST/DAST/SCA in the pipeline</li><li>Configure CSP and HSTS with their limits</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-07-headers-sdlc/README.md'>Lab 07 — Security Headers &amp; Dependency Hygiene</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-3-advanced.md'>CS-049</a></p>
+<p class='noprint'><a href='../../lectures/module-02-web/lecture-08.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 5 <small>(05 Oct – 08 Oct 2026)</small></h2>
+<p>📝 Quiz Q5 (specimen) · <a href='../../assessments/student/quizzes/quiz-05.md'>paper</a></p>
+<div class='card'>
+<p><span class='date'>Mon 05 Oct</span> <strong>Lecture 09 — Malware Analysis I: Taxonomy and Static Triage</strong><br><span class='mod'>M3 Malware Analysis &amp; Social Engineering · CLO-3</span></p>
+<ul><li>Triage samples statically (hashes→imports)</li><li>Justify sandbox isolation controls</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-08-static-triage/README.md'>Lab 08 — Malware Static Triage</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-2-intermediate.md'>CS-042</a></p>
+<p class='noprint'><a href='../../lectures/module-03-malware/lecture-09.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 08 Oct</span> <strong>Lecture 10 — Malware Analysis II: Dynamic Analysis, Sandboxes, and IOCs</strong><br><span class='mod'>M3 Malware Analysis &amp; Social Engineering · CLO-3</span></p>
+<ul><li>Detonate safely with fake-net isolation</li><li>Extract IOCs and map to ATT&amp;CK</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-09-dynamic-analysis/README.md'>Lab 09 — Dynamic Analysis &amp; IOCs</a></li><li>🔬 <a href='../../labs/lab-27-forensics/README.md'>Lab 27 — Digital Forensics (instructor artifacts)</a> <span class='graded'>graded</span> · <em>Lab 27 due W9</em></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-1-beginner.md'>CS-016</a></p>
+<p class='noprint'><a href='../../lectures/module-03-malware/lecture-10.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 6 <small>(12 Oct – 15 Oct 2026)</small></h2>
+<p><span class='assess'>📝 <strong>Checkpoint C (graded, /10)</strong> · <a href='../../assessments/student/quizzes/quiz-06.md'>details</a></span></p>
+<div class='card'>
+<p><span class='date'>Mon 12 Oct</span> <strong>Lecture 11 — Ransomware and Worms: Anatomy and Resilience</strong><br><span class='mod'>M3 Malware Analysis &amp; Social Engineering · CLO-3</span></p>
+<ul><li>Walk the ransomware lifecycle</li><li>Design 3-2-1 backup resilience</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-10-ransomware-resilience/README.md'>Lab 10 — Ransomware Resilience Scenario</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-2-intermediate.md'>CS-032</a></p>
+<p class='noprint'><a href='../../lectures/module-03-malware/lecture-11.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 15 Oct</span> <strong>Lecture 12 — Social Engineering, Phishing &amp; Awareness Programs + Checkpoint C</strong><br><span class='mod'>M3 Malware Analysis &amp; Social Engineering · CLO-3</span></p>
+<ul><li>Dissect phishing/BEC anatomy</li><li>Design awareness programs with report-rate metrics</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-11-awareness-design/README.md'>Lab 11 — Awareness Campaign Design</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-2-intermediate.md'>CS-023</a></p>
+<p class='noprint'><a href='../../lectures/module-03-malware/lecture-12.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 7 <small>(19 Oct – 22 Oct 2026)</small></h2>
+<p>📝 Quiz Q7 (specimen) · <a href='../../assessments/student/quizzes/quiz-07.md'>paper</a></p>
+<div class='card'>
+<p><span class='date'>Mon 19 Oct</span> <strong>Lecture 13 — Network Defense I: Packet Analysis with Wireshark</strong><br><span class='mod'>M4 Network Security &amp; Monitoring · CLO-4</span></p>
+<ul><li>Read TCP conversations and TLS metadata</li><li>Spot scan/beacon/exfil patterns</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-12-packet-analysis/README.md'>Lab 12 — Network Traffic Analysis (prepared captures)</a> <span class='graded'>graded</span> · <em>Lab 12 due W8</em></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-3-advanced.md'>CS-056</a></p>
+<p class='noprint'><a href='../../lectures/module-04-network/lecture-13.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 22 Oct</span> <strong>Lecture 14 — Network Defense II: Firewalls, Segmentation, Zero Trust</strong><br><span class='mod'>M4 Network Security &amp; Monitoring · CLO-4</span></p>
+<ul><li>Design default-deny zones</li><li>Write minimal, ordered rulesets</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-13-segmentation/README.md'>Lab 13 — Segmentation &amp; Ruleset Design</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-2-intermediate.md'>CS-025</a></p>
+<p class='noprint'><a href='../../lectures/module-04-network/lecture-14.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 8 <small>(26 Oct – 29 Oct 2026)</small></h2>
+<p><span class='assess'>📝 <strong>Midterm examination (15%)</strong></span> 📝 Quiz Q8 pre-midterm (specimen) · <a href='../../assessments/student/quizzes/quiz-08.md'>paper</a> <span class='assess'>📝 <strong>Lab 12 report due</strong></span></p>
+<div class='card'>
+<p><span class='date'>Mon 26 Oct</span> <strong>Lecture 15 — IDS/IPS and SIEM: Detection and Alert Triage</strong><br><span class='mod'>M4 Network Security &amp; Monitoring · CLO-4</span></p>
+<ul><li>Contrast signature vs anomaly IDS</li><li>Triage a SIEM queue with metrics</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-14-siem-triage/README.md'>Lab 14 — Alert Triage &amp; Correlation</a></li><li>🔬 <a href='../../labs/lab-29-vuln-assessment/README.md'>Lab 29 — Authorized-Target Vulnerability Assessment</a> <span class='graded'>graded</span> · <em>Lab 29 due W11</em></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-2-intermediate.md'>CS-039</a></p>
+<p class='noprint'><a href='../../lectures/module-04-network/lecture-15.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 29 Oct</span> <strong>Lecture 16 — Wireless, VPN &amp; Midterm Consolidation</strong><br><span class='mod'>M4 Network Security &amp; Monitoring · CLO-4</span></p>
+<ul><li>Assess WPA3 and VPN posture honestly</li><li>Consolidate Modules 1–4 in the midterm</li></ul>
+<p class='noprint'><a href='../../lectures/module-04-network/lecture-16.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 9 <small>(02 Nov – 05 Nov 2026)</small></h2>
+<p>📝 Quiz Q9 (specimen) · <a href='../../assessments/student/quizzes/quiz-09.md'>paper</a> <span class='assess'>📝 <strong>Lab 27 report due</strong></span></p>
+<div class='card'>
+<p><span class='date'>Mon 02 Nov</span> <strong>Lecture 17 — Symmetric Cryptography and Block Cipher Modes</strong><br><span class='mod'>M5 Cryptography &amp; Applied Trust · CLO-5</span></p>
+<ul><li>Choose modes by property</li><li>Demonstrate ECB failure; justify AEAD</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-15-crypto-integrity/README.md'>Lab 15 — Cryptographic Operations &amp; Integrity Checks</a> <span class='graded'>graded</span> · <em>Lab 15 due W10</em></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-3-advanced.md'>CS-047</a></p>
+<p class='noprint'><a href='../../lectures/module-05-crypto/lecture-17.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 05 Nov</span> <strong>Lecture 18 — Asymmetric Cryptography, PKI, and TLS</strong><br><span class='mod'>M5 Cryptography &amp; Applied Trust · CLO-5</span></p>
+<ul><li>Walk the TLS 1.3 handshake</li><li>Explain certificates and trust chains</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-16-pki-tls/README.md'>Lab 16 — Certificates, PKI &amp; TLS Inspection</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-3-advanced.md'>CS-046</a></p>
+<p class='noprint'><a href='../../lectures/module-05-crypto/lecture-18.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 10 <small>(09 Nov – 12 Nov 2026)</small></h2>
+<p><span class='assess'>📝 <strong>Checkpoint D (graded, /10)</strong> · <a href='../../assessments/student/quizzes/quiz-10.md'>details</a></span> <span class='assess'>📝 <strong>Lab 15 report due</strong></span></p>
+<div class='card'>
+<p><span class='date'>Mon 09 Nov</span> <strong>Lecture 19 — Hashing, Password Storage, and Key Management</strong><br><span class='mod'>M5 Cryptography &amp; Applied Trust · CLO-5</span></p>
+<ul><li>Select Argon2id/bcrypt with tuned work factors</li><li>Explain salt and cracking economics</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-17-password-storage/README.md'>Lab 17 — Password Storage &amp; Secrets Hygiene</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-2-intermediate.md'>CS-021</a></p>
+<p class='noprint'><a href='../../lectures/module-05-crypto/lecture-19.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 12 Nov</span> <strong>Lecture 20 — Cryptographic Failures in the Wild + Checkpoint D</strong><br><span class='mod'>M5 Cryptography &amp; Applied Trust · CLO-5</span></p>
+<ul><li>Autopsy misuse patterns (ECB, IV reuse, key co-location)</li><li>Specify a key-management lifecycle</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-18-crypto-failures/README.md'>Lab 18 — Crypto Failure Review</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-1-beginner.md'>CS-011</a></p>
+<p class='noprint'><a href='../../lectures/module-05-crypto/lecture-20.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 11 <small>(16 Nov – 19 Nov 2026)</small></h2>
+<p>📝 Quiz Q11 (specimen) · <a href='../../assessments/student/quizzes/quiz-11.md'>paper</a> <span class='assess'>📝 <strong>Lab 29 report due</strong></span> 🗓 Register case-brief case · <a href='../../assessments/student/case-study-activity.md'>task</a></p>
+<div class='card'>
+<p><span class='date'>Mon 16 Nov</span> <strong>Lecture 21 — Security Analytics I: Anomaly Detection in Logs</strong><br><span class='mod'>M6 Data Science for Security &amp; ML Security · CLO-6</span></p>
+<ul><li>Engineer features from auth logs</li><li>Tune isolation forests by SOC capacity</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-19-log-anomaly/README.md'>Lab 19 — Log Analysis &amp; Anomaly Detection</a> <span class='graded'>graded</span> · <em>Lab 19 due W12</em></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-3-advanced.md'>CS-055</a></p>
+<p class='noprint'><a href='../../lectures/module-06-ml-security/lecture-21.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 19 Nov</span> <strong>Lecture 22 — Security Analytics II: Classification Pipelines</strong><br><span class='mod'>M6 Data Science for Security &amp; ML Security · CLO-6</span></p>
+<ul><li>Build phishing classifiers that survive rewording</li><li>Manage feature drift and label quality</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-20-phishing-classifier/README.md'>Lab 20 — Phishing Classification Pipeline</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-3-advanced.md'>CS-068</a></p>
+<p class='noprint'><a href='../../lectures/module-06-ml-security/lecture-22.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 12 <small>(23 Nov – 26 Nov 2026)</small></h2>
+<p><span class='assess'>📝 <strong>Checkpoint E (graded, /10)</strong> · <a href='../../assessments/student/quizzes/quiz-12.md'>details</a></span> <span class='assess'>📝 <strong>Case-study brief due (10%)</strong> · <a href='../../assessments/student/case-study-activity.md'>details</a></span> <span class='assess'>📝 <strong>Lab 19 report due</strong></span></p>
+<div class='card'>
+<p><span class='date'>Mon 23 Nov</span> <strong>Lecture 23 — Adversarial Machine Learning: Evasion, Poisoning, Extraction</strong><br><span class='mod'>M6 Data Science for Security &amp; ML Security · CLO-6</span></p>
+<ul><li>Execute sandbox adversarial demos</li><li>Apply mitigations with named costs</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-21-adversarial-ml/README.md'>Lab 21 — Adversarial ML Stations</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-3-advanced.md'>CS-067</a></p>
+<p class='noprint'><a href='../../lectures/module-06-ml-security/lecture-23.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 26 Nov</span> <strong>Lecture 24 — Detection Engineering: Metrics, Rules, and the SOC Pipeline + Checkpoint E</strong><br><span class='mod'>M6 Data Science for Security &amp; ML Security · CLO-6</span></p>
+<ul><li>Take a rule through shadow→alert→block</li><li>Write coverage statements with measured FPR/TPR</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-22-detection-engineering/README.md'>Lab 22 — Detection Engineering Pipeline</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-4-expert.md'>CS-085</a></p>
+<p class='noprint'><a href='../../lectures/module-06-ml-security/lecture-24.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 13 <small>(30 Nov – 03 Dec 2026)</small></h2>
+<p>📝 Quiz Q13 (specimen) · <a href='../../assessments/student/quizzes/quiz-13.md'>paper</a></p>
+<div class='card'>
+<p><span class='date'>Mon 30 Nov</span> <strong>Lecture 25 — Cloud Security I: Shared Responsibility and IAM</strong><br><span class='mod'>M7 Cloud Security &amp; Privacy · CLO-7</span></p>
+<ul><li>Allocate responsibility across service models</li><li>Design least-privilege IAM with roles</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-23-cloud-iam/README.md'>Lab 23 — Cloud IAM Least-Privilege Audit</a> <span class='graded'>graded</span> · <em>Lab 23 due W14</em></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-3-advanced.md'>CS-062</a></p>
+<p class='noprint'><a href='../../lectures/module-07-cloud-privacy/lecture-25.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 03 Dec</span> <strong>Lecture 26 — Cloud Security II: Containers, Serverless, and Secrets</strong><br><span class='mod'>M7 Cloud Security &amp; Privacy · CLO-7</span></p>
+<ul><li>Harden images and runtime surfaces</li><li>Manage secrets without env-as-vault</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-24-containers/README.md'>Lab 24 — Container &amp; Workload Hardening</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-3-advanced.md'>CS-064</a></p>
+<p class='noprint'><a href='../../lectures/module-07-cloud-privacy/lecture-26.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 14 <small>(07 Dec – 10 Dec 2026)</small></h2>
+<p><span class='assess'>📝 <strong>Checkpoint F (graded, /10)</strong> · <a href='../../assessments/student/quizzes/quiz-14.md'>details</a></span> <span class='assess'>📝 <strong>Lab 23 report due</strong></span></p>
+<div class='card'>
+<p><span class='date'>Mon 07 Dec</span> <strong>Lecture 27 — Cloud Security III: Audit Trails, Detection, and Misconfiguration Management</strong><br><span class='mod'>M7 Cloud Security &amp; Privacy · CLO-7</span></p>
+<ul><li>Distinguish control- vs data-plane telemetry</li><li>Run policy-as-code and drift detection</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-25-cloud-audit/README.md'>Lab 25 — Cloud Audit-Trail Investigation</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-3-advanced.md'>CS-063</a></p>
+<p class='noprint'><a href='../../lectures/module-07-cloud-privacy/lecture-27.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 10 Dec</span> <strong>Lecture 28 — Privacy Engineering: Data Protection, GDPR-style Compliance, DPIA + Checkpoint F</strong><br><span class='mod'>M7 Cloud Security &amp; Privacy · CLO-7</span></p>
+<ul><li>Apply minimization and data-subject rights</li><li>Draft a DPIA skeleton</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-26-dpia/README.md'>Lab 26 — Privacy Engineering &amp; DPIA</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-4-expert.md'>CS-094</a></p>
+<p class='noprint'><a href='../../lectures/module-07-cloud-privacy/lecture-28.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 15 <small>(14 Dec – 17 Dec 2026)</small></h2>
+<p>📝 Quiz Q15 pre-final (specimen) · <a href='../../assessments/student/quizzes/quiz-15.md'>paper</a> <span class='assess'>📝 <strong>Capstone milestone 1 (threat model)</strong> · <a href='../../assessments/student/capstone-brief.md'>details</a></span></p>
+<div class='card'>
+<p><span class='date'>Mon 14 Dec</span> <strong>Lecture 29 — Capstone Kickoff: Scenario, Threat Model, Control Backlog</strong><br><span class='mod'>M8 Capstone · CLO-8</span></p>
+<ul><li>Scope one system with explicit boundaries</li><li>Produce a team threat model and backlog</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-30-capstone/README.md'>Lab 30 — Capstone Working Labs (1/3)</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-4-expert.md'>CS-100</a></p>
+<p class='noprint'><a href='../../lectures/module-08-capstone/lecture-29.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 17 Dec</span> <strong>Lecture 30 — Capstone Build Sprint I: Hardening and Detection</strong><br><span class='mod'>M8 Capstone · CLO-8</span></p>
+<ul><li>Implement priority controls with fix-verify</li><li>Build one detection with measured metrics</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-30-capstone/README.md'>Lab 30 — Capstone Working Labs (2/3)</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-4-expert.md'>CS-083</a></p>
+<p class='noprint'><a href='../../lectures/module-08-capstone/lecture-30.md'>Open lecture notes →</a></p>
+</div>
+<h2>Week 16 <small>(21 Dec – 24 Dec 2026)</small></h2>
+<p><span class='assess'>📝 <strong>Capstone report + showcase defense (20%)</strong> · <a href='../../assessments/student/capstone-brief.md'>details</a></span> <span class='assess'>📝 <strong>Final examination (10%)</strong> · <a href='../../assessments/student/specimen-final.md'>details</a></span> <span class='assess'>📝 <strong>Lab 28 report due</strong></span></p>
+<div class='card'>
+<p><span class='date'>Mon 21 Dec</span> <strong>Lecture 31 — Capstone Build Sprint II: Incident-Response Tabletop</strong><br><span class='mod'>M8 Capstone · CLO-8</span></p>
+<ul><li>Run a tabletop against your own design</li><li>Update runbooks from findings</li></ul>
+<ul><li>🔬 <a href='../../labs/lab-28-ir-simulation/README.md'>Lab 28 — Incident Response Simulation</a> <span class='graded'>graded</span> · <em>Lab 28 due W16</em></li><li>🔬 <a href='../../labs/lab-30-capstone/README.md'>Lab 30 — Capstone Working Labs (3/3)</a></li></ul>
+<p>💬 Case: <a href='../../case-studies/collection/level-3-advanced.md'>CS-058</a></p>
+<p class='noprint'><a href='../../lectures/module-08-capstone/lecture-31.md'>Open lecture notes →</a></p>
+</div>
+<div class='card'>
+<p><span class='date'>Thu 24 Dec</span> <strong>Lecture 32 — Capstone Showcase and Final Examination</strong><br><span class='mod'>M8 Capstone · CLO-8</span></p>
+<ul><li>Defend the capstone chain under questioning</li><li>Complete the final examination</li></ul>
+<p class='noprint'><a href='../../lectures/module-08-capstone/lecture-32.md'>Open lecture notes →</a></p>
+</div>
+<p class='legend'>Generated from the repository's actual content — regenerate, don't hand-edit. Answer keys are never included.</p></body></html>

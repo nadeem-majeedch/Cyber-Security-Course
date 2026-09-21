@@ -1,0 +1,13 @@
+# Client-managed workspace metadata — not course content
+.freebuff/
+
+# Sandbox / lab artifacts
+*.vmem
+*.vdi/
+*.log
+sandbox-output/
+.vm/
+
+# OS cruft
+Thumbs.db
+.DS_Store

@@ -1,0 +1,22 @@
+/* @theme course */
+section {
+  font-size: 26px;
+  color: #111111;
+  background: #ffffff;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  padding: 56px 64px;
+}
+h1 { font-size: 1.9em; color: #0b3d66; }
+h2 { font-size: 1.35em; color: #0b3d66; }
+h3 { font-size: 1.1em; }
+strong { color: #7a1f1f; }
+code, pre {
+  font-family: 'Cascadia Code', Consolas, monospace;
+  font-size: 0.85em;
+  background: #f4f6f8;
+}
+pre { padding: 12px; line-height: 1.25; }
+table { font-size: 0.8em; }
+blockquote { border-left: 6px solid #0b3d66; padding-left: 14px; color: #333; }
+footer { font-size: 16px; color: #555; }
+section.lead { text-align: left; }
